@@ -121,7 +121,7 @@ From there, we can head back inside our app and connect to our database.
 
 ```php
 $db = new Leaf\Db;
-$db->connect('127.0.0.1', 'username', 'password', 'dbname');
+$db->connect('127.0.0.1', 'dbname', 'username', 'password');
 ```
 
 We can place this before before our routes so we can use the `$db` variable everywhere.
